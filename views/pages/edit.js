@@ -1,9 +1,9 @@
 window.onload = function(){
   var textInputs = document.querySelectorAll('form > p > input[type=text]');
 
-  var song;
+  var currentData;
 
-  window.localStorage.storyData ? song = JSON.parse(window.localStorage.storyData) : currentData = ""
+  window.localStorage.storyData ? currentData = JSON.parse(window.localStorage.storyData) : currentData = ""
 
   textInputs[0].value = currentData.verse1 || "";
   textInputs[1].value = currentData.verse2 || "";

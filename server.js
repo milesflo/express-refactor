@@ -29,24 +29,25 @@ app.get('/song/update', function(req, res) {
   res.redirect('/');
 })
 
+
 app.get('/song/1', function(req, res) {
   res.render('pages/song', {
     pageInfo: song.verse1,
-    nextPage: 'song/2',
+    nextPage: '2',
   });
 });
 
-app.get('song/2', function(req, res) {
+app.get('/song/2', function(req, res) {
   res.render('pages/song', {
     pageInfo: song.verse2,
-    nextPage: 'song/3',
+    nextPage: '/song/3',
   });
 });
 
-app.get('song/3', function(req, res) {
+app.get('/song/3', function(req, res) {
   res.render('pages/song', {
     pageInfo: song.verse3,
-    nextPage: 'song/1',
+    nextPage: '/song/1',
   });
 });
 
