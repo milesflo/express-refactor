@@ -8,11 +8,11 @@ window.onload = function(){
     verse.innerText = currentData.verse1;
   }
 
-  if (window.location.pathname === '/song/1/2' && currentData.verse2 !== "") {
+  if (window.location.pathname === '/song/2' && currentData.verse2 !== "") {
     verse.innerText = currentData.verse2;
   }
 
-  if (window.location.pathname === '/song/1/2/3' && currentData.verse3 !== "") {
+  if (window.location.pathname === '/song/3' && currentData.verse3 !== "") {
     verse.innerText = currentData.verse3;
   }
 
